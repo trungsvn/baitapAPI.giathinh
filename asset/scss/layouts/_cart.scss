@@ -1,0 +1,44 @@
+/* CART */
+#cartZone {
+    position: fixed;
+    top: 50px;
+    right: 10px;
+    max-width: 600px;
+    padding: 1.5rem;
+    background-color: $primaryColor;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    max-width: 600px;
+    z-index: 99;
+    thead,  th, td {
+        width: 100px;
+        text-align: center;
+    }
+    .cart-header {
+        i {
+            font-size: 20px;
+        }
+    }
+    .cart-item, .order-item {
+        max-width: 60px;
+        .btnRemoveAdd, .btnRemoveOrder {
+            cursor: pointer;
+            font-size: 22px;
+            color: red;
+        }
+        img {
+            @include square(60px);
+        }
+    }
+    .cart-table-add {
+        border-radius: 8px;
+        background-color: white;
+    }
+    .accordion-button {
+        width: 540px;
+    }
+}
+#cart-table-order {
+    border-radius: 8px;
+    background-color: antiquewhite;
+}

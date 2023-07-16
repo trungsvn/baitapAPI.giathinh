@@ -1,0 +1,103 @@
+/* HEADER */
+//* =============== Logo leftArea =============== */
+#frameHead {
+    display:flex;
+	width: 100%;
+	min-width: 800px;
+	// position: absolute;
+	top:0px;
+	left:0px;
+	z-index:10;
+    // padding-bottom: 20px;
+}
+#logoArea h1,
+#logoArea h2,
+#logoArea h3 {
+	display: inline;
+	vertical-align: bottom;
+}
+#logo {
+	position:absolute;
+	top:8px;
+	left:15px;
+	text-align: left;
+	height: 30px;
+	line-height: 30px;
+}
+#logoArea {
+	background: #fff url(/CapstoneJS_nhom4-master/asset/img/header/logoBG.gif) repeat-x top left;
+	// position:absolute;
+	top:0px;
+	left:0px;
+	width: 100%;
+	min-width: 800px;
+	height: 68px;
+}
+#modelName {
+	padding: 0 10px;
+	color: #474747;
+	font: 900 normal 20px arial, helvetica;
+}
+#tradeName {
+	padding: 0;
+	color: #474747;
+	font: 16px arial, helvetica;
+	margin: 0;
+}
+/* =============== rightArea =============== */
+#rightArea {
+	background: url(/CapstoneJS_nhom4-master/asset/img/header/headerBG.gif) repeat-x left top;
+	// width: 850px;
+	height: 48px;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	z-index:100;
+}
+
+
+
+.headerSlope {
+	width: 140px;
+	display: inline;
+	float: left;
+}
+
+.float-r{
+	display: flex;
+	float:right;
+	
+}
+
+.float-r > li::after{
+	content: '';
+		width: 0%;
+		height: 2px;
+		background: #35a22c;
+		display: block;
+		transition: all 0.5s;}
+.float-r > li:hover:after {
+		   width: 100%;
+}
+.float-r>li{
+	color: white;
+	padding-right: 20px;
+	padding-left: 20px;
+	list-style: none;
+}
+
+#carouselId{
+height:410px;
+}
+#frameProducts{
+	width: 100%;
+	top : 440px;
+	left: 0px;
+	position: absolute;
+	z-index: 100;
+}
+#searchProducts{
+	top:60px;
+	position: relative;
+}
+

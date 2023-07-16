@@ -1,0 +1,53 @@
+/* PRODUCT-ZONE */
+.products{
+    padding: 10px,0px,10px,0px;
+}
+.d-flex{
+    padding-top: 40px;
+}
+.product-show {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+}
+
+.cart-item {
+    margin-bottom: 10px;
+}
+
+.cart-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+}
+
+#cartTotal {
+    font-weight: bold;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+.product-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.product-saved .product-img {
+    filter: none;
+}

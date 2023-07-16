@@ -1,0 +1,28 @@
+// Abstracts
+@import '../scss/abstracts/variables';
+@import '../scss/abstracts/mixins';
+
+// Base
+@import '../scss/base/global';
+@import '../scss/base/customize';
+
+// Components
+@import '../scss/components/validation';
+@import '../scss/components/logo';
+
+// Layout
+@import '../scss/layouts/header';
+@import '../scss/layouts/footer';
+@import '../scss/layouts/cart';
+@import '../scss/layouts/addtocart';
+@import '../scss/layouts/productzone';
+@import '../scss/layouts/service';
+@import '../scss/layouts/sort-table';
+@import '../scss/layouts/support';
+
+// Pages
+@import '../scss/pages/index';
+@import '../scss/pages/admin';
+// Themes (no themes)
+
+// Vendors (no vendors yet)
