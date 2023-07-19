@@ -1,10 +1,29 @@
 /* PRODUCT-ZONE */
-.products{
-    padding: 10px,0px,10px,0px;
+#frameProducts {
+    display: flex;
+    width: 100%;
+    min-width: 800px;
+    position: absolute;
+    z-index: 10;
 }
-.d-flex{
+
+.productsDetail {
+    padding-top: 50px;
+}
+
+#searchProducts {
+    top: 60px;
+    position: relative;
+}
+
+.products {
+    padding: 10px, 0px, 10px, 0px;
+}
+
+.d-flex {
     padding-top: 40px;
 }
+
 .product-show {
     display: flex;
     flex-wrap: wrap;
@@ -50,4 +69,9 @@
 
 .product-saved .product-img {
     filter: none;
+}
+
+.dropdown>a {
+    padding-left: 20px;
+    padding-right: 20px;
 }

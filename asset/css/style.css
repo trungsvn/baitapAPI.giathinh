@@ -153,8 +153,6 @@ form {
   display: flex;
   width: 100%;
   min-width: 800px;
-  top: 0px;
-  left: 0px;
   z-index: 10;
 }
 
@@ -196,7 +194,6 @@ form {
   margin: 0;
 }
 
-/* =============== rightArea =============== */
 #rightArea {
   background: url(/CapstoneJS_nhom4-master/asset/img/header/headerBG.gif) repeat-x left top;
   height: 48px;
@@ -217,7 +214,7 @@ form {
   float: right;
 }
 
-.float-r > li::after {
+.float-r > a > li::after {
   content: "";
   width: 0%;
   height: 2px;
@@ -226,11 +223,11 @@ form {
   transition: all 0.5s;
 }
 
-.float-r > li:hover:after {
+.float-r > a > li:hover:after {
   width: 100%;
 }
 
-.float-r > li {
+.float-r > a > li {
   color: white;
   padding-right: 20px;
   padding-left: 20px;
@@ -241,24 +238,9 @@ form {
   height: 410px;
 }
 
-#frameProducts {
-  width: 100%;
-  top: 440px;
-  left: 0px;
-  position: absolute;
-  z-index: 100;
-}
-
-#searchProducts {
-  top: 60px;
-  position: relative;
-}
-
 /* FOOTER */
 #footer {
-  top: 890px;
   position: relative;
-  background-color: white;
 }
 
 #GiaThinhFooter {
@@ -287,10 +269,6 @@ form {
 
 #tnContact {
   display: flex;
-}
-
-#tnContact > ul > li {
-  padding-right: 20px;
 }
 
 /* CART */
@@ -339,6 +317,23 @@ form {
 }
 
 /* ADD-TO-CART MODAL */ /* PRODUCT-ZONE */
+#frameProducts {
+  display: flex;
+  width: 100%;
+  min-width: 800px;
+  position: absolute;
+  z-index: 10;
+}
+
+.productsDetail {
+  padding-top: 50px;
+}
+
+#searchProducts {
+  top: 60px;
+  position: relative;
+}
+
 .products {
   padding: 10px, 0px, 10px, 0px;
 }
@@ -395,12 +390,18 @@ form {
   filter: none;
 }
 
-/* SERVICE */
+.dropdown > a {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 /* SERVICES */
 #frameService {
+  display: flex;
   width: 100%;
+  min-width: 800px;
   position: absolute;
-  z-index: 100;
+  z-index: 10;
 }
 
 #iconService {
@@ -415,10 +416,6 @@ form {
   background-size: cover;
   background-position: top center;
   text-align: center;
-}
-
-.section-inner {
-  padding: 60px;
 }
 
 .services__container {
@@ -461,23 +458,69 @@ form {
      border-image: url(../img/br.png) 1 round;
 }
 
+#rentColor {
+  border: 1px solid transparent;
+}
+
+/* ABOUT */
+.about {
+  padding-bottom: 5rem;
+  background-image: url(../../img/1656623358_79_Background-Banner-Dep-Da-Dang-Danh-Cho-Moi-Chu-De.jpg);
+  background-size: 100%;
+  background-position: center right;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.about__content {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.about__left,
+.about__right {
+  width: 50%;
+}
+
+.about__left img {
+  width: 100%;
+  border-radius: 0 6.25rem 6.25rem 0;
+  transform: translate(-6.5rem, -1rem) scale(1.3);
+}
+
+.about__right i {
+  margin-right: 0.75rem;
+  font-size: 1.5rem;
+  color: #f55f8d;
+  vertical-align: middle;
+}
+
+.about__right p {
+  margin-bottom: 1rem;
+  width: 90%;
+}
+
+.about__right ul {
+  margin-bottom: 2rem;
+}
+
 /* SORT-TABLE */ /*****support*************/
 #frameSupport {
+  display: flex;
   width: 100%;
-  top: 1700px;
+  min-width: 800px;
   position: absolute;
-  z-index: 100;
+  z-index: 10;
 }
 
 .containerSupport {
-  top: 840px;
-  position: relative;
-  padding: auto;
+  padding-top: 100px;
 }
 
 #downloadsList {
   display: -ms-inline-grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: auto;
   padding: 10px;
   gap: 10px;
 }
@@ -604,6 +647,32 @@ form {
 
 .clearfix {
   display: flex;
+}
+
+.content {
+  width: 50%;
+  top: 88px;
+  left: 100px;
+  position: absolute;
+}
+
+.trung {
+  bottom: -70px;
+  left: 300px;
+  position: absolute;
+}
+
+.fas .fa-facebook-f {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.sign {
+  bottom: 50px;
+  left: 350px;
+  position: absolute;
+  opacity: 70%;
+  width: 20%;
 }
 
 /*ADMIN PAGE*/
